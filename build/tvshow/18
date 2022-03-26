@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>The Office</title>
+
+	<!-- note the special href for files in the Flask "static" folder -->
+	<link rel="stylesheet" href="../static/css/main.css">
+
+</head>
+<body>
+
+<div id="container">
+
+  <!-- Jinja directives: page contents will go between them -->
+  
+
+<!-- the full dict for a president is sent here as pres by the route -->
+
+<h1>The Office</h1>
+
+<!-- NOTE the pattern for pointing to a file inside the static folder -->
+<img class="center" src="../static/images/18.jpg" alt="TV Show Photo">
+
+<p>The Office, My 18th favorite show, was created by Greg Daniels/Ricky Gervais/Stephen Merchant and is a Comedy show. In the show, a group of employees work at a paper supply company.
+
+</p>
+
+<p><a href="https://www.imdb.com/title/tt0386676/">View IMDb entry for The Office.</a></p>
+
+<!-- NOTE the way to link to a route: Use the function name -->
+<p><a href="../index.html">Return to the list</a> to select a different TV show.</p>
+
+
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- the full dict for a president is sent here as pres by the route -->
+
+<h1>{{ tv['Name'] }}</h1>
+
+<!-- NOTE the pattern for pointing to a file inside the static folder -->
+<img class="center" src="{{ url_for('static', filename='images/' + tv['Image']) }}" alt="TV Show Photo">
+
+<p>{{ tv['Name'] }}, My {{ ord }} favorite show, was created by {{ tv['Creator(s)'] }} and is a {{ tv['Genre'] }} show. In the show, {{ tv['Description']  }}.
+
+</p>
+
+<p><a href="{{ tv['IMDb'] }}">View IMDb entry for {{ tv['Name'] }}.</a></p>
+
+<!-- NOTE the way to link to a route: Use the function name -->
+<p><a href="{{ url_for('index') }}">Return to the list</a> to select a different TV show.</p>
+
+{% endblock %}
